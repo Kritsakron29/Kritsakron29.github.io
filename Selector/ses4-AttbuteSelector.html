@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเลือกทุกเอลิมเนต์ด้วย Attbute Selector</title>
+    <style>
+
+        h2[title="atitle"]{
+            color: blueviolet;
+        }
+        h2[title="firstTitle"]{
+            color: blue;
+        }
+        img {
+            height: 200px;
+
+        }
+        img[alt] {
+            border: solid blue 2px;
+        }
+        h3[title~="job"]{
+            font-style: italic;
+        }
+        h3[title~="joy"]{
+            text-decoration: underline;
+        }
+        h3[title~="title"]{
+            color: rgb(15, 112, 112);
+        }
+
+        p[lang|="en"]{
+            background-color: blueviolet;
+        }
+        a[href^="https"]{
+            color: red;
+            background-image: url(arrow.png);
+            background-repeat: on-repeat ;
+            background-position: right;
+            padding-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><center>การเลือกทุกเอลิมเนต์ด้วย Attbute Selector</center></h1>
+    <h2 title="atitle">not Attbute name title</h2>
+    <h2 title="firstTitle">Attbute title</h2>
+    <div>
+        <article>
+            <h2>First Set</h2>
+            <img class="pic1" src="/Selector/27332ca91e91c02ea212431cdba5484e.jpg" alt="city aerial">
+            <img class="pic2" src="/Selector/5c406def38fd804c2772fd15_800x0xcover_8_nHRXE4.jpg" alt="city evening">
+            <img class="pic3" src="/Selector/5cc80e5a0c8e650ffef8856f_800x0xcover_zhn0zgq2.jpg" alt="night scity aerial">
+        </article>
+        <hr>
+        <article>
+            <h2>First Set</h2>
+            <img class="pic4" src="/Selector/f99858a93931110c01a130f35bc3f630.jpg" alt="japan shirakawa">
+            <img class="pic5" src="/Selector/omk402r4zY2fxeGx4H1-o.jpg" alt="street puddle">
+            <img class="pic6" src="/Selector/Uma Alfa Para Um Ômega.jpg" alt="germany park">
+        </article>
+    </div>
+    <h3 title="title job joy">ตัวที่1 ทดสอบการใช้งาน Attbute~=value</h3>
+    <h3 title="job">ตัวที่2 ทดสอบการใช้งาน Attbute~=value</h3>
+    <h3 title="joy">ตัวที่3 ทดสอบการใช้งาน Attbute~=value</h3>
+
+    <div>
+        <p lang="en">Hello</p>
+        <p lang="en-us">Hi</p>
+        <p lang="es">Hola</p>
+        <p lang="th">สวัสดี</p>
+
+    </div>
+    <h2><center>การใช้งาน Attbute^=value</center></h2>
+    <ul>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+        <li><a href="https://www.facebook.com/">facebook</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
+    </ul>
+    <ol>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+        <li><a href="https://www.facebook.com/">facebook</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
+    </ol>
+
+    
+
+</body>
+</html>
